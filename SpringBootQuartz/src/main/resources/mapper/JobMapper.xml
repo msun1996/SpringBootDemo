@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.msun.dao.JobDao">
+
+    <resultMap id="jobMap" type="com.msun.domain.ScheduleJob">
+        <id column="id" property="id"/>
+        <result column="class_name" property="className"/>
+        <result column="cron_expression" property="cronExpression"/>
+        <result column="job_name" property="jobName"/>
+        <result column="job_group" property="jobGroup"/>
+        <result column="trigger_name" property="triggerName"/>
+        <result column="trigger_group" property="triggerGroup"/>
+        <result column="pause" property="pause"/>
+        <result column="description" property="description"/>
+        <result column="create_time" property="createTime"/>
+        <result column="last_update_time" property="lastUpdateTime"/>
+    </resultMap>
+
+    <select id="getAll" resultMap="jobMap">
+        select * from schedule_job
+    </select>
+
+    <select id="getById" resultMap="jobMap">
+        select * from schedule_job
+        where id=#{id}
+    </select>
+
+    <insert id="add" parameterType="com.msun.domain.ScheduleJob">
+        insert into schedule_job
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="className != null ">
+                class_name,
+            </if>
+            <if test="cronExpression != null ">
+                cron_expression,
+            </if>
+            <if test="jobName != null ">
+                job_name,
+            </if>
+            <if test="jobGroup != null ">
+                job_group,
+            </if>
+            <if test="triggerName != null ">
+                trigger_name,
+            </if>
+            <if test="triggerGroup != null ">
+                trigger_group,
+            </if>
+            <if test="pause != null ">
+                pause,
+            </if>
+            <if test="description != null ">
+                description,
+            </if>
+        </trim>
+        <trim prefix=" VALUES (" suffix=")" suffixOverrides=",">
+            <if test="className != null ">
+                #{className},
+            </if>
+            <if test="cronExpression != null ">
+                #{cronExpression},
+            </if>
+            <if test="jobName != null ">
+                #{jobName},
+            </if>
+            <if test="jobGroup != null ">
+                #{jobGroup},
+            </if>
+            <if test="triggerName != null ">
+                #{triggerName},
+            </if>
+            <if test="triggerGroup != null ">
+                #{triggerGroup},
+            </if>
+            <if test="pause != null ">
+                #{pause},
+            </if>
+            <if test="description != null ">
+                #{description},
+            </if>
+        </trim>
+    </insert>
+
+    <update id="modify" parameterType="com.msun.domain.ScheduleJob">
+        update schedule_job
+        <set>
+            <if test="className != null ">
+                class_name = #{className},
+            </if>
+            <if test="cronExpression != null ">
+                cron_expression = #{cronExpression},
+            </if>
+            <if test="jobName != null ">
+                job_name = #{jobName},
+            </if>
+            <if test="jobGroup != null ">
+                job_group = #{jobGroup},
+            </if>
+            <if test="triggerName != null ">
+                trigger_name = #{triggerName},
+            </if>
+            <if test="triggerGroup != null ">
+                trigger_group = #{triggerGroup},
+            </if>
+            <if test="pause != null ">
+                pause = #{pause},
+            </if>
+            <if test="description != null ">
+                description = #{description},
+            </if>
+        </set>
+    </update>
+
+    <delete id="deleteByID">
+        delete from schedule_job
+        where id=#{id}
+    </delete>
+
+
+</mapper>

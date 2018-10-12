@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.msun.dao.UserDao">
+
+    <resultMap id="userMap" type="com.msun.domain.User">
+        <id property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="password" column="password"/>
+    </resultMap>
+
+    <insert id="save" parameterType="com.msun.domain.User">
+        insert into user(username, password) values (#{username}, #{password})
+    </insert>
+
+    <delete id="delete" parameterType="Integer">
+        delete from user
+        where id=#{id}
+    </delete>
+
+    <select id="getById" parameterType="Integer" resultMap="userMap">
+        select * from user
+        where id=#{id}
+    </select>
+
+    <select id="getByUserName" parameterType="String" resultMap="userMap">
+        select * from user
+        where username=#{username}
+    </select>
+
+</mapper>

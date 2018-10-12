@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JWTSSO/JWTSSO.iml" filepath="$PROJECT_DIR$/JWTSSO/JWTSSO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MybatisMutilDriud/MybatisMutilDriud.iml" filepath="$PROJECT_DIR$/MybatisMutilDriud/MybatisMutilDriud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MybatisPageHelper/MybatisPageHelper.iml" filepath="$PROJECT_DIR$/MybatisPageHelper/MybatisPageHelper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SpringBootDemo.iml" filepath="$PROJECT_DIR$/.idea/SpringBootDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBootQuartz/SpringBootQuartz.iml" filepath="$PROJECT_DIR$/SpringBootQuartz/SpringBootQuartz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringSecurity/SpringSecurity.iml" filepath="$PROJECT_DIR$/SpringSecurity/SpringSecurity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringSecurity2/SpringSecurity2.iml" filepath="$PROJECT_DIR$/SpringSecurity2/SpringSecurity2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringSecurity3/SpringSecurity3.iml" filepath="$PROJECT_DIR$/SpringSecurity3/SpringSecurity3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringSecurity4/SpringSecurity4.iml" filepath="$PROJECT_DIR$/SpringSecurity4/SpringSecurity4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringSecuritySpringSocial/SpringSecuritySpringSocial.iml" filepath="$PROJECT_DIR$/SpringSecuritySpringSocial/SpringSecuritySpringSocial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringSecurityToken/SpringSecurityToken.iml" filepath="$PROJECT_DIR$/SpringSecurityToken/SpringSecurityToken.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JWTSSO/sso-client1/sso-client1.iml" filepath="$PROJECT_DIR$/JWTSSO/sso-client1/sso-client1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JWTSSO/sso-client2/sso-client2.iml" filepath="$PROJECT_DIR$/JWTSSO/sso-client2/sso-client2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JWTSSO/sso-server/sso-server.iml" filepath="$PROJECT_DIR$/JWTSSO/sso-server/sso-server.iml" />
+    </modules>
+  </component>
+</project>

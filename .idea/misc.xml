@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/MybatisMutilDriud/pom.xml" />
+        <option value="$PROJECT_DIR$/MybatisPageHelper/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootQuartz/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringSecurity/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringSecurity2/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringSecurity3/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringSecurity4/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringSecurityToken/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringSecuritySpringSocial/pom.xml" />
+        <option value="$PROJECT_DIR$/JWTSSO/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

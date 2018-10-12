@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+</head>
+<body>
+<div sec:authorize="hasRole('ROLE_ADMIN')"> <!-- 用户类型为ROLE_ADMIN 显示 -->
+    <p>管理员</p>
+</div>
+<div sec:authorize="hasRole('ROLE_PASSERBY')"> <!-- 用户类型为 ROLE_PASSERBY 显示 -->
+    <p>路人甲也可能是乙</p>
+</div>
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="注销"/>
+</form>
+</body>
+</html>

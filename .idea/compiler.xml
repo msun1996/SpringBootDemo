@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="MybatisMutilDriud" />
+        <module name="MybatisPageHelper" />
+        <module name="SpringBootQuartz" />
+        <module name="SpringSecurity" />
+        <module name="SpringSecurity2" />
+        <module name="SpringSecurity3" />
+        <module name="SpringSecurity4" />
+        <module name="SpringSecuritySpringSocial" />
+        <module name="SpringSecurityToken" />
+        <module name="sso-client1" />
+        <module name="sso-client2" />
+        <module name="sso-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="JWTSSO" target="1.5" />
+      <module name="MybatisMutilDriud" target="1.8" />
+      <module name="MybatisPageHelper" target="1.8" />
+      <module name="SpringBootQuartz" target="1.8" />
+      <module name="SpringSecurity" target="1.8" />
+      <module name="SpringSecurity2" target="1.8" />
+      <module name="SpringSecurity3" target="1.8" />
+      <module name="SpringSecurity4" target="1.8" />
+      <module name="SpringSecuritySpringSocial" target="1.8" />
+      <module name="SpringSecurityToken" target="1.8" />
+      <module name="sso-client1" target="1.5" />
+      <module name="sso-client2" target="1.5" />
+      <module name="sso-server" target="6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

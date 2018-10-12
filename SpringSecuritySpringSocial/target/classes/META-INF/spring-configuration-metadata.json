@@ -1,0 +1,17 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.msun.properties.SecurityProperties",
+      "name": "my.security",
+      "type": "com.msun.properties.SecurityProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.msun.properties.SecurityProperties",
+      "name": "my.security.social",
+      "type": "com.msun.properties.SocialProperties"
+    }
+  ]
+}
